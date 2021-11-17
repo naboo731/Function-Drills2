@@ -112,14 +112,14 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE
 
-const uniq = (arr, callback) => {
-  let modifiedArr = []
-  for (let i = 0; i < arr.length; i++){
-    if (!modifiedArr.includes(arr[i]))
-      modifiedArr.push(arr[i])
+// const uniq = (arr, callback) => {
+//   let modifiedArr = []
+//   for (let i = 0; i < arr.length; i++){
+//     if (!modifiedArr.includes(arr[i]))
+//       modifiedArr.push(arr[i])
 
-    } callback(modifiedArr)
-  } 
+//     } callback(modifiedArr)
+//   } 
 
 
 
@@ -132,9 +132,9 @@ const uniq = (arr, callback) => {
 
 // CODE HERE
 
-uniq(names, (uniqArr) => {
-  console.log(`The new names array with all the duplicate items removed is ${uniqArr}`)
-})
+// uniq(names, (uniqArr) => {
+//   console.log(`The new names array with all the duplicate items removed is ${uniqArr}`)
+// })
 
 
 ////////// PROBLEM 6 //////////
@@ -146,11 +146,11 @@ uniq(names, (uniqArr) => {
 
 // CODE HERE 
 
-const each = (arr, callback) => {
-  arr.forEach(function(name, index){
-    callback(name, index)
-  })
-  }
+// const each = (arr, callback) => {
+//   arr.forEach(function(name, index){
+//     callback(name, index)
+//   })
+//   }
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -161,9 +161,9 @@ const each = (arr, callback) => {
 
 // CODE HERE
 
-each(names, (item, index) => {
-  console.log(`The item at the index ${index} is ${item}`)
-})
+// each(names, (item, index) => {
+//   console.log(`The item at the index ${index} is ${item}`)
+// })
 
 ////////// PROBLEM 7 //////////
 
@@ -196,15 +196,21 @@ var users = [
 // Do not edit the code above.
 
 // CODE HERE 
-
+const getUserById = (arr, id, callback) => {
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i].id === id){
+      callback(arr[i])
+    }
+  }
+}
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// getUserById(users, '16t', user => {
-//   console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
-// })
+getUserById(users, '16t', user => {
+  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+})
 
 ////////// CHALLENGE //////////
 
