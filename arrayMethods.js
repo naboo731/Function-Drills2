@@ -112,6 +112,10 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 
 // CODE HERE
 
+let orderTotals= orders.map(function(order){
+  return order.price + (order.price * order.tax)
+})
+console.log(orderTotals)
 
 
 ////////// PROBLEM 6 //////////
