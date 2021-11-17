@@ -137,9 +137,6 @@ uniq(names, (uniqArr) => {
 })
 
 
-  
-
-
 ////////// PROBLEM 6 //////////
 
 /* 
@@ -149,6 +146,11 @@ uniq(names, (uniqArr) => {
 
 // CODE HERE 
 
+const each = (arr, callback) => {
+  arr.forEach(function(name, index){
+    callback(name, index)
+  })
+  }
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -159,6 +161,9 @@ uniq(names, (uniqArr) => {
 
 // CODE HERE
 
+each(names, (item, index) => {
+  console.log(`The item at the index ${index} is ${item}`)
+})
 
 ////////// PROBLEM 7 //////////
 
