@@ -7,17 +7,17 @@
 
 // CODE HERE
 
-const multiply = (num1, num2, callback) => {
-  return callback(num1 * num2)
-}
+// const multiply = (num1, num2, callback) => {
+//   return callback(num1 * num2)
+// }
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-multiply(4, 3, answer => {
-  console.log('The answer is ' + answer) //should console.log 12
-})
+// multiply(4, 3, answer => {
+//   console.log('The answer is ' + answer) //should console.log 12
+// })
 
 
 
@@ -29,8 +29,6 @@ multiply(4, 3, answer => {
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 // Do not edit the code above.
 
-
-
 ////////// PROBLEM 2 //////////
 
 /*
@@ -40,6 +38,9 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE 
 
+// const first = (arr, callback) => {
+//   return callback(arr[0])
+// }
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
