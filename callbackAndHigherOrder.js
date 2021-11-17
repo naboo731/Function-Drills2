@@ -82,27 +82,25 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE 
 
-const contains = (arr, name, callback) => {
-  if (arr.includes(name)){
-    callback(true)
-  } else {
-    callback(false)
-  }
-}
+// const contains = (arr, name, callback) => {
+//   if (arr.includes(name)){
+//     callback(true)
+//   } else {
+//     callback(false)
+//   }
+// }
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-contains(names, 'Colt', result => {
-  if(result === true){
-    console.log('Colt is in the array')
-  } else {
-    console.log('Colt is not in the array')
-  }
-})
-
-
+// contains(names, 'Colt', result => {
+//   if(result === true){
+//     console.log('Colt is in the array')
+//   } else {
+//     console.log('Colt is not in the array')
+//   }
+// })
 
 ////////// PROBLEM 5 //////////
 
@@ -114,6 +112,17 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
+const uniq = (arr, callback) => {
+  let modifiedArr = []
+  for (let i = 0; i < arr.length; i++){
+    if (!modifiedArr.includes(arr[i]))
+      modifiedArr.push(arr[i])
+
+    } callback(modifiedArr)
+  } 
+
+
+
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
   The callback function should take in one parameter called uniqArr.
@@ -123,6 +132,12 @@ contains(names, 'Colt', result => {
 
 // CODE HERE
 
+uniq(names, (uniqArr) => {
+  console.log(`The new names array with all the duplicate items removed is ${uniqArr}`)
+})
+
+
+  
 
 
 ////////// PROBLEM 6 //////////
