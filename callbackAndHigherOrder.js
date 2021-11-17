@@ -50,8 +50,6 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 //   console.log('The first name in names is ' + firstName)
 // })
 
-
-
 ////////// PROBLEM 3 //////////
 
 /*
@@ -61,6 +59,9 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 
 // CODE HERE
 
+// const last = (arr, callback) => {
+//   return callback(arr[arr.length - 1])
+// }
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
@@ -69,8 +70,6 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 // last(names, lastName => {
 //   console.log('The last name in names is ' + lastName)
 // })
-
-
 
 ////////// PROBLEM 4 //////////
 
